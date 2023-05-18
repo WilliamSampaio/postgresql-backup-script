@@ -10,7 +10,7 @@ PGPASSWORD="password" pg_dump $database > "${database}_${now}.bak"
 zip "${database}_${now}.zip" "${database}_${now}.bak"
 
 # copy backup to another server
-# sshpass -p 'password' scp $database_$now.zip user@host:/directory/to/save
+# sshpass -p 'password' scp "${database}_${now}.zip" user@host:/directory/to/save
 
 # remove dump to save space
 rm -f "${database}_${now}.bak"
