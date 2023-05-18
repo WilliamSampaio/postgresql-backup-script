@@ -15,6 +15,7 @@ apt update && apt install -y sshpass zip
 ````bash
 chmod +x backup.sh
 ````
+
 ````bash
 ./backup.sh
 ````
