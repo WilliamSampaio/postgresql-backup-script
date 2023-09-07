@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 now=$(date +'%Y-%m-%d_%s')
 database="database_name"
